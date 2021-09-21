@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: gainsboro;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333;
+    padding-left: 80px;
+    font-size: 2rem;
+    padding-bottom: 100px;
+    font-family: Open Sans Condensed,sans-serif;
+}
+.navbar{
+    padding-left: 20%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+/*main grid columns*/
+.about-grid{ 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    margin-bottom: 20%;
+}
+img{
+    height: 500px;
+    width: 500px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+h1{
+    font-family:Open Sans Condensed ,sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-align: center;
+}
+span{
+    font-family: Caveat,sans-serif;
+    font-size: 2.5rem;
+}
+.about-grid p{
+    text-align: center;
+    font-family: Open Sans Condensed,sans-serif;
+    font-size: 1.5rem;
+    margin-right: 10%;  
+}
+/*sign up for newsletter*/
+.aside{
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    width: 70%;
+    margin:15% 15% 5% 15%;
+    border: 1px solid black;
+    padding: 20px;
+}
+.aside h2{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.aside input{
+    margin-left: 40%;
+    height: 20px;
+    padding-left: 30px;
+    height: 20px;
+}
+.aside button{
+    margin-left: 45%;
+}
+.aside p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.social img{
+    height: 60px;
+    width: 60px;
+}
+.foot{
+    font-style: italic;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    height: 150px;
+    padding-top: 20px;
+}
+.foot a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: Courgette,sans-serif;
+    padding: 20px;
+}
+.footer{
+    padding-top: 20px;
+}
+/*logo*/
+/*.logo{
+    display: grid;
+    grid-template-columns: 10% 40%;
+    grid-gap: 0;
+}*/
+.logo h1{
+    font-family: Open Sans Condensed,sans-serif;
+    font-weight: lighter;
+    margin-top: 0;
+    background-color: #fff;
+   padding-bottom: 30px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+.logo .image{
+    background-color: #fff;
+}
+.dropdown-list{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+  }
+  .dropdown-list a{
+      font-size: 1.3rem;
+      font-family: Caveat,sans-serif;
+      text-decoration: underline;
+  }
+  .menu{
+      position: relative;
+      display: inline-block; 
+  }
+  .menu:hover .dropdown-list {
+      display: block;
+    }
+    .socials a{
+        padding-left: 5px;
+        text-decoration: underline;
+        font-family: Caveat,sans-serif;
+        color: white;
+        text-align: center;
+    }
+    @media  (max-width:700px){
+        .logo h1{
+            font-size: 2.1rem;
+        }
+        nav{
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 0;
+            align-self: flex-start;
+        }
+        .navbar a{
+            font-size: 1.5rem;
+            display: inline;
+            padding-left: 15px;
+        }
+        .dropdown-list a{
+            font-size: 1.2rem;
+        }
+        .about-grid{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+        }
+        .about-grid p{
+            font-size: 1.3rem;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .about-grid img{
+            width: auto;
+            height: 300px;
+            margin:0 20% 0 10%
+        }
+        h1{
+            font-size: 2.3rem;
+            text-decoration: underline;
+        }
+
+    }

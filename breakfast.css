@@ -1,0 +1,133 @@
+body{
+    background-color: #fff;
+}
+h2{
+    text-align:center ;
+    font-family: Open Sans Condensed,sans-serif;
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+h3{
+    font-family: Courgette,sans-serif;
+}
+
+.breakfast-name p{
+    text-align: center;
+    font-family:Open Sans Condensed,sans-serif;
+    font-size: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.name img{
+    height: 250px;
+    width:403px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+}
+.name hr{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+  tr,td,th{
+border-bottom: 1px solid gainsboro;
+padding: 10px 20px;
+}
+/*.name{
+    border: 1px solid #333;
+    width: auto;
+    margin-left: 10%;
+    background-color: lavenderblush;
+    padding-left: 0;
+    padding-right: 0;
+}*/
+
+.pic1{
+    border: 1px solid gainsboro;
+    margin-left: 10%;
+    background-color: lavenderblush;
+    padding: 0;
+}
+.description{
+    padding: 20px;
+}
+/*rows/columns*/
+.row1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 5%;
+}
+i{
+    margin-left: 5%;
+}
+#total{
+    margin-left: 30%;
+    margin-top: 20px;
+}
+#yield{
+    margin-left: 10%;
+}
+.dropdown-list{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+  }
+  .dropdown-list a{
+      font-size: 15px;
+      font-family: Caveat,sans-serif;
+      text-decoration: underline;
+  }
+  .menu{
+      position: relative;
+      display: inline-block; 
+  }
+  .menu:hover .dropdown-list {
+      display:block;
+    }
+    @media  (max-width:700px){
+        .logo h1{
+            font-size: 2.1rem;
+        }
+        nav{
+            height: 40px;
+            
+        }
+        .navbar a{
+            font-size: 1.5rem;
+            display: inline;
+            padding-left: 15px;
+        }
+        .row1,
+        .pic1{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        .pic1 img{
+            width: 450px;
+        }
+        .breakfast-main{
+            margin-top: 40px;
+        }
+        .breakfast-name p{
+            font-size: 1.2rem;
+            text-align: left;
+            padding: 15px;
+            margin-left: 0;
+            margin-right: 50px;
+        }
+        .dropdown-list a,
+        .foot a,
+        .socials a{
+            font-size: 1.2rem;
+        }
+        .logo img{
+            margin-left: 40%;
+        }
+    }
